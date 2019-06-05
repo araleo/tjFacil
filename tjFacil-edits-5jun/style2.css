@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --corDoFundo: #f4f4f4;
+    --corDoTexto: #373737;
+}
+
+.barraTopo {
+    position: sticky;
+    top: 0;
+    height: 50px;
+    background-color: var(--corDoFundo);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.classeBusca {
+    position: absolute;
+    left: 20px;
+    width: auto;
+    border-radius: 25px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.formBusca {
+    background-color: white;
+    color: white;
+}
+
+#barraBusca,
+#botaoBusca {
+    background-color: white;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 5px;
+    border: 0;
+}
+
+#barraBusca {
+    width: 330px;  
+}
+
+#barraBusca::placeholder {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--corDoTexto);
+    opacity: 0.5;
+}
+
+
+.classeMenu {
+    position: absolute;
+    right: 20px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.classeMenu a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: var(--corDoTexto);
+}
+
+#divConteudo {
+    width: 99vw;
+    height: 100vw;
+    padding-left: 0;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
