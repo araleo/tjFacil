@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700|Merriweather:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="object.js"></script>
     <script src="script.js"></script>
@@ -14,17 +14,37 @@
 
 <body>
     <div class="divBarraTopo">
-        <a href="#" id="link-git">araleo</a>
-        <a href="#" id="link-instrucoes">Como utilizar</a>
+        <a href="https://github.com/araleo" id="link-git">araleo</a>
+        <a href="#" id="link-instrucoes" onClick="toggleDivComoUsar()">Como utilizar</a>
     </div>
 
-    <div class="divLogo">
+    <div class="divComoUsar" id="divComoUsar">
+        <p id="tit">Olá, obrigado por usar o TJFácil!</p>
+        <p>O objetivo do nosso site é levar você até o site do Tribunal que precisa. Para isso, você pode usar a nossa barra de busca de duas formas:</p>
+
+        <ul>
+            <li>
+                Buscando pela sigla do tribunal (p. ex.: STF, TJMG, TRF5, TRT1). Nesse caso, você será redirecionado, em uma nova aba, para a página principal do tribunal buscado.
+            </li>
+            <li>
+                Buscando por um número de processo, no formato CNJ. Nesse caso, você será encaminhado para a página de consulta processual do tribunal em que tramita o processo.
+                <div id="tab">
+                    Alguns tribunais possuem páginas de consulta diferentes para processos de primeira e de segunda instância e para processos eletrônicos.
+                    <br>Use as caixas abaixo da barra de busca para especificar essas condições ou para processos dos tribunais superiores.
+                    <br>Repare que você não será redirecionado diretamente para a página do processo que buscou, mas para a página de consulta do tribunal. Será preciso efetuar a busca no site do próprio tribunal para acessar a página do processo.
+                </div>
+             </li>
+        </ul>
+    </div>
+
+
+    <div class="divLogo" id="divLogo">
         <h1>TJFácil</h1>
     </div>
 
     <div class="divBarraBusca">
             <form action="" id="formBusca" onsubmit="buscaTJFacil()">
-                <input type="text" name="buscatjfacil" id="barraBusca" placeholder=" Digite o número do processo (formato CNJ)">
+                <input type="text" name="buscatjfacil" id="barraBusca" placeholder=" Número do processo ou sigla do Tribunal">
                 <input type="submit" value="Busca">
             </form>
     </div>

@@ -1,3 +1,26 @@
+function controlC() {
+    var copyText = document.getElementById("barraBusca");
+    copyText.select();
+    document.execCommand("copy");
+}
+
+function toggleDivComoUsar() {
+    let divComoUsar = document.getElementById("divComoUsar")
+    let linkInstrucoes = document.getElementById("link-instrucoes")
+    let divLogo = document.getElementById("divLogo")
+
+    if (divComoUsar.style.display === "none") {
+        divComoUsar.style.display = "block"
+        linkInstrucoes.innerHTML = "Fechar instruções"
+        divLogo.style.height = "20vh";
+    } else {
+        divComoUsar.style.display = "none";
+        linkInstrucoes.innerHTML = "Como utilizar"
+        divLogo.style.height = "30vh";
+    }
+}
+
+
 function preparaNumero(input) {
     input = input.replace(/\D/g,'');
     if (input.length > 20) {
@@ -14,7 +37,7 @@ function preparaNumero(input) {
     };
 
     if (numObj.tribunal.charAt(0) == "4") {
-        numObj.tribunal += numObj.regiao.charAt(0) + numObj.regiao.charAt(1); 
+        numObj.tribunal += numObj.regiao.charAt(0) + numObj.regiao.charAt(1);
     };
 
     if (numObj.tribunal.charAt(0) == "6") {
@@ -26,12 +49,6 @@ function preparaNumero(input) {
     }
 
     return numObj;
-}
-
-function controlC() {
-    var copyText = document.getElementById("barraBusca");
-    copyText.select();
-    document.execCommand("copy");
 }
 
 function retornaInstancia() {
@@ -50,18 +67,17 @@ function retornaInstancia() {
 
 function tribunaisSuperiores() {
     if (document.getElementById("stj").checked == true) {
-        return "stj";
+        return "STJ";
     } else if (document.getElementById("stf").checked == true) {
-        return "stf";
+        return "STF";
     } else if (document.getElementById("tst").checked == true) {
-        return "tst";
+        return "TST";
     } else {
         return "";
     }
 }
 
 function buscaTJFacil() {
-    
     let input = document.getElementById("barraBusca").value;
 
 	if (input.charAt(0) >= '0' && input.charAt(0) <= '9') {
@@ -71,9 +87,9 @@ function buscaTJFacil() {
         if (document.getElementById("eproc").checked == true) {
             tipoProcesso = "eletronico";
         }
-    
+
         let instancia = retornaInstancia();
-    
+
         let terceiroGrau = tribunaisSuperiores();
         if (terceiroGrau != "") {
             numeroProcesso.tribunal = terceiroGrau;
@@ -81,21 +97,19 @@ function buscaTJFacil() {
 
         controlC();
         window.open(tribunais[numeroProcesso.tribunal][tipoProcesso][instancia], '_blank');
-    
+
     } else {
-    
         let nomeTribunal;
 
         for (let chave in tribunais) {
 
             nomeTribunal = tribunais[chave]["nome"];
             nomeTeste = nomeTribunal.toLowerCase();
-          
+
             if (nomeTeste.startsWith(input.toLowerCase())) {
                 controlC();
                 window.open(tribunais[chave]["principal"], '_blank');
             }
         }
-
     }
 }
