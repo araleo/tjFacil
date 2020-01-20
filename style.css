@@ -26,10 +26,20 @@ a {
 
 .divBarraTopo a {
     color: var(--corClara);
+    width: 300px;
 }
 
 .divBarraTopo a:visited {
     color: var(--corClara);
+}
+
+.divBarraTopo #link-splitpdf {
+  text-align: center;
+  display: block;
+}
+
+.divBarraTopo #link-instrucoes {
+  text-align: right;
 }
 
 .divBarraTopo {
@@ -177,6 +187,12 @@ a {
 .divBotoes input[type="radio"]:checked + label:after,
 .divProcEletronico input[type="checkbox"]:checked + label:after {
     font-weight: bold;
+}
+
+@media (max-width: 750px) {
+    .divBarraTopo #link-splitpdf {
+        display: none;
+    }
 }
 
 @media (max-width: 1200px) {
