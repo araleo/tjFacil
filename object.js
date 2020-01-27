@@ -136,7 +136,7 @@ var tribunais = {
             "primeira": "https://www.tjgo.jus.br/index.php/processo-fisico/primeiro-grau",
             "segunda": "https://www.tjgo.jus.br/index.php/processo-fisico/segundo-grau"
         }
-    },    
+    },
     "810": {
         "nome": "TJMA - Tribunal de Justiça do Maranhão",
         "principal": "http://www.tjma.jus.br",
@@ -148,7 +148,7 @@ var tribunais = {
             "primeira": "https://jurisconsult.tjma.jus.br/#/pg-public-search-form",
             "segunda": "https://jurisconsult.tjma.jus.br/#/sg-public-search-form"
         }
-    },    
+    },
     "811": {
         "nome": "TJMT - Tribunal de Justiça do Mato Grosso",
         "principal": "http://www.tjmt.jus.br",
@@ -172,7 +172,7 @@ var tribunais = {
             "primeira": "https://esaj.tjms.jus.br/cpopg5/open.do",
             "segunda": "https://esaj.tjms.jus.br/cposg5/open.do"
         }
-    },   
+    },
     "813": {
         "nome": "TJMG - Tribunal de Justiça de Minas Gerais",
         "principal": "https://www.tjmg.jus.br/portal-tjmg",
@@ -184,7 +184,7 @@ var tribunais = {
             "primeira": "https://www4.tjmg.jus.br/juridico/sf/index.jsp",
             "segunda": "https://www4.tjmg.jus.br/juridico/sf/proc_massiva2.jsp"
         }
-    }, 
+    },
     "814": {
         "nome": "TJPA - Tribunal de Justiça do Pará",
         "principal": "http://www.tjpa.jus.br/PortalExterno",
@@ -196,7 +196,7 @@ var tribunais = {
             "primeira": "https://consultas.tjpa.jus.br/consultaprocessoportal/consulta/principal?detalhada=true#",
             "segunda": "https://consultas.tjpa.jus.br/consultaprocessoportal/consulta/principal?detalhada=true#"
         }
-    },  
+    },
     "815": {
         "nome": "TJPB - Tribunal de Justiça da Paraíba",
         "principal": "https://www.tjpb.jus.br",
@@ -261,8 +261,8 @@ var tribunais = {
         "nome": "TJRN - Tribunal de Justiça do Rio Grande do Norte",
         "principal": "http://www.tjrn.jus.br",
         "eletronico": {
-            "primeira": "https://pje.tjrn.jus.br/consulta1grau/ConsultaPublica/listView.seam",
-            "segunda": "https://pje.tjrn.jus.br/consulta2grau/ConsultaPublica/listView.seam"
+            "primeira": "https://pje1g.tjrn.jus.br/consultapublica/ConsultaPublica/listView.seam",
+            "segunda": "https://pje2g.tjrn.jus.br/consultapublica/ConsultaPublica/listView.seam"
         },
         "fisico": {
             "primeira": "http://esaj.tjrn.jus.br/cpo/pg/open.do",
@@ -285,8 +285,8 @@ var tribunais = {
         "nome": "TJRO - Tribunal de Justiça de Rondônia",
         "principal": "https://www.tjro.jus.br",
         "eletronico": {
-            "primeira": "https://pjeconsulta.tjro.jus.br/pg/ConsultaPublica/listView.seam",
-            "segunda": "https://pjeconsulta.tjro.jus.br/sg/ConsultaPublica/listView.seam"
+            "primeira": "https://pjepg.tjro.jus.br/consulta/ConsultaPublica/listView.seam",
+            "segunda": "https://pjesg.tjro.jus.br/consulta/ConsultaPublica/listView.seam"
         },
         "fisico": {
             "primeira": "https://www.tjro.jus.br/appg/pages/index.xhtml",
@@ -345,7 +345,7 @@ var tribunais = {
         "nome": "TJTO - Tribunal de Justiça do Tocantins",
         "principal": "http://www.tjto.jus.br",
         "eletronico": {
-            "primeira": "https://consultaeproc.tjto.jus.br/eprocV2_prod_1grau/externo_controlador.php?acao=processo_consulta_publica",
+            "primeira": "https://eproc1.tjto.jus.br/eprocV2_prod_1grau/externo_controlador.php?acao=processo_consulta_publica_tjto",
             "segunda": "https://eproc2.tjto.jus.br/eprocV2_prod_2grau/externo_controlador.php?acao=processo_consulta_publica"
         },
         "fisico": {
@@ -526,7 +526,7 @@ var tribunais = {
         "principal": "https://www.jfrj.jus.br",
         "eletronico": {
             "primeira": "https://eproc.jfrj.jus.br/eproc/externo_controlador.php?acao=processo_consulta_publica",
-            "segunda": "http://www10.trf2.jus.br/consultas/processo-eletronico"
+            "segunda": "https://eproc.trf2.jus.br/eproc/externo_controlador.php?acao=processo_consulta_publica"
         },
         "fisico": {
             "primeira": "http://procweb.jfrj.jus.br/portal/consulta/cons_procs.asp",
@@ -538,7 +538,7 @@ var tribunais = {
         "principal": "https://www.jfes.jus.br",
         "eletronico": {
             "primeira": "https://eproc.jfes.jus.br/eproc/externo_controlador.php?acao=processo_consulta_publica",
-            "segunda": "http://www10.trf2.jus.br/consultas/processo-eletronico"
+            "segunda": "https://eproc.trf2.jus.br/eproc/externo_controlador.php?acao=processo_consulta_publica"
         },
         "fisico": {
             "primeira": "http://www2.jfes.jus.br/jfes/portal/consulta/cons_procs.asp",
@@ -729,8 +729,8 @@ var tribunais = {
         "nome": "TRT5 - TRT da 5ª Região",
         "principal": "https://www.trt5.jus.br",
         "eletronico": {
-            "primeira": "https://pje2.trt5.jus.br/consultaprocessual/pages/consultas/ConsultaProcessual.seam",
-            "segunda": "https://pje2.trt5.jus.br/consultaprocessual/pages/consultas/ConsultaProcessual.seam"
+            "primeira": "https://pje.trt5.jus.br/consultaprocessual/home",
+            "segunda": "https://pje.trt5.jus.br/consultaprocessual/home"
         },
         "fisico": {
             "primeira": "https://www.trt5.jus.br/consulta-processo-redirect",
@@ -825,8 +825,8 @@ var tribunais = {
         "nome": "TRT13 - TRT da 13ª Região",
         "principal": "https://www.trt13.jus.br",
         "eletronico": {
-            "primeira": "https://consultaprocessual.trt13.jus.br/consultaprocessual/home",
-            "segunda": "https://consultaprocessual.trt13.jus.br/consultaprocessual/home"
+            "primeira": "https://pje.trt13.jus.br/consultaprocessual/home",
+            "segunda": "https://pje.trt13.jus.br/consultaprocessual/home"
         },
         "fisico": {
             "primeira": "https://www.trt13.jus.br/portalservicos/consultaproc/informarProcesso.jsf",
@@ -835,7 +835,7 @@ var tribunais = {
     },
     "514": {
         "nome": "TRT14 - TRT da 14ª Região",
-        "principal": "https://portal.trt14.jus.br/portal",
+        "principal": "http://www.trt14.jus.br/home",
         "eletronico": {
             "primeira": "http://pje.trt14.jus.br/consultaprocessual/pages/consultas/ConsultaProcessual.seam",
             "segunda": "http://pje.trt14.jus.br/consultaprocessual/pages/consultas/ConsultaProcessual.seam"
@@ -925,8 +925,8 @@ var tribunais = {
             "segunda": "https://pje.trt21.jus.br/consultaprocessual/pages/consultas/ConsultaProcessual.seam"
         },
         "fisico": {
-            "primeira": "https://www.trt21.jus.br/Asp/Online/entrada.asp",
-            "segunda": "https://www.trt21.jus.br/Asp/Online/entrada.asp"
+            "primeira": "https://www.trt21.jus.br/servicos/consulta-processual",
+            "segunda": "https://www.trt21.jus.br/servicos/consulta-processual"
         }
     },
     "522": {
@@ -1023,7 +1023,7 @@ var tribunais = {
         "nome": "TRF4 - Tribunal Regional Federal da 4ª Região",
         "principal": "https://www.trf4.jus.br/trf4",
         "eletronico": {
-            "unica": "https://eproc.trf4.jus.br/eproc2trf4",
+            "unica": "https://www2.trf4.jus.br/trf4/controlador.php?acao=consulta_processual_pesquisa&strSecao=&selForma=NU",
         },
         "fisico": {
             "unica": "https://www2.trf4.jus.br/trf4/controlador.php?acao=consulta_processual_pesquisa&strSecao=&selForma=NU",
