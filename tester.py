@@ -1,4 +1,7 @@
+#!/usr/bin/env python3
+
 import ezgmail, re, requests, time
+from datetime import date
 
 
 def formata(dicionario):
@@ -19,9 +22,12 @@ def formata(dicionario):
 dicionario = {'erros': set(), 'timeouts': set(), 'ssl_error': set(), 'connection_timeout': set(), 'connection_error': set()}
 sequencia = ['|', '/', '-', '\\']
 
-with open('object.js', 'r') as f:
+with open('/home/pi/tjFacil/object.js', 'r') as f:
     urls = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', f.read())
     for i, link in enumerate(urls):
+
+
+
         try:
             res = requests.get(link, timeout=5)
             if res.status_code != requests.codes.ok:
@@ -39,5 +45,12 @@ with open('object.js', 'r') as f:
 
 outstring = formata(dicionario)
 
+dia = date.today().strftime('%d%m%Y')
+nome = f"/home/pi/tjFacil/relatorios/relatoriotjfacil{dia}.txt"
+
+f_saida = open(nome,'w')
+f_saida.write(outstring)
+f_saida.close()
+
 #print(outstring)
-ezgmail.send('mendes.lnr@gmail.com','Relatório TJFacil',outstring)
+ezgmail.send('mendes.lnr@gmail.com','Relatório TJFácil',outstring)
