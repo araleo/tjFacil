@@ -20,14 +20,10 @@ def formata(dicionario):
 
 
 dicionario = {'erros': set(), 'timeouts': set(), 'ssl_error': set(), 'connection_timeout': set(), 'connection_error': set()}
-sequencia = ['|', '/', '-', '\\']
 
 with open('/home/pi/tjFacil/object.js', 'r') as f:
     urls = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', f.read())
-    for i, link in enumerate(urls):
-
-
-
+    for link in urls:
         try:
             res = requests.get(link, timeout=5)
             if res.status_code != requests.codes.ok:
@@ -40,8 +36,6 @@ with open('/home/pi/tjFacil/object.js', 'r') as f:
             dicionario['connection_timeout'].add(link)
         except requests.exceptions.ConnectionError:
             dicionario['connection_error'].add(link)
-
-        print(sequencia[i % 4], end='\r')
 
 outstring = formata(dicionario)
 
