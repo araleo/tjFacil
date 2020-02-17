@@ -33,7 +33,13 @@ a {
     color: var(--corClara);
 }
 
-.divBarraTopo #link-splitpdf {
+.divBarraTopo #link-splitpdf,
+.divBarraTopo #link-clipping { 
+  text-align: center;
+  display: block;
+}
+
+.divBarraTopo #link-clipping {
   text-align: center;
   display: block;
 }
