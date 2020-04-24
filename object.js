@@ -989,7 +989,7 @@ var tribunais = {
             "segunda": "https://www.stm.jus.br/servicos-stm/juridico/acompanhamento-processual/numeracao-unica"
         }
     },
-    "TRF1": {
+    "40100": {
         "nome": "TRF1 - Tribunal Regional Federal da 1ª Região",
         "principal": "https://portal.trf1.jus.br/portaltrf1/pagina-inicial.htm",
         "eletronico": {
@@ -999,7 +999,7 @@ var tribunais = {
             "unica": "https://processual.trf1.jus.br/consultaProcessual/numeroProcesso.php?secao=TRF1&enviar=ok",
         }
     },
-    "TRF2": {
+    "40200": {
         "nome": "TRF2 - Tribunal Regional Federal da 2ª Região",
         "principal": "https://www10.trf2.jus.br/portal",
         "eletronico": {
@@ -1009,7 +1009,7 @@ var tribunais = {
             "unica": "http://portal.trf2.jus.br/portal/consulta/cons_procs.asp",
         }
     },
-    "TRF3": {
+    "40300": {
         "nome": "TRF3 - Tribunal Regional Federal da 3ª Região",
         "principal": "https://www.trf3.jus.br",
         "eletronico": {
@@ -1019,7 +1019,7 @@ var tribunais = {
             "unica": "http://web.trf3.jus.br/consultas/Internet/ConsultaProcessual",
         }
     },
-    "TRF4": {
+    "40400": {
         "nome": "TRF4 - Tribunal Regional Federal da 4ª Região",
         "principal": "https://www.trf4.jus.br/trf4",
         "eletronico": {
@@ -1029,7 +1029,7 @@ var tribunais = {
             "unica": "https://www2.trf4.jus.br/trf4/controlador.php?acao=consulta_processual_pesquisa&strSecao=&selForma=NU",
         }
     },
-    "TRF5": {
+    "40500": {
         "nome": "TRF5 - Tribunal Regional Federal da 5ª Região",
         "principal": "https://www.trf5.jus.br",
         "eletronico": {

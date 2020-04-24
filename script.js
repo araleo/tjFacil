@@ -20,7 +20,6 @@ function toggleDivComoUsar() {
     }
 }
 
-
 function preparaNumero(input) {
     input = input.replace(/\D/g,'');
     if (input.length > 20) {
@@ -51,15 +50,17 @@ function preparaNumero(input) {
     return numObj;
 }
 
-function retornaInstancia() {
+function retornaInstancia(numeroProcesso) {
     if (document.getElementById("grau_2").checked == true) {
         return "segunda";
     } else if (document.getElementById("stj").checked == true) {
         return "unica";
     } else if (document.getElementById("stf").checked == true) {
         return "unica";
-    } if (document.getElementById("tst").checked == true) {
+    } else if (document.getElementById("tst").checked == true) {
         return "unica";
+    } else if (numeroProcesso.tribunal.charAt(0) == "4") {
+        return "unica"
     } else {
         return "primeira";
     }
@@ -88,7 +89,7 @@ function buscaTJFacil() {
             tipoProcesso = "eletronico";
         }
 
-        let instancia = retornaInstancia();
+        let instancia = retornaInstancia(numeroProcesso);
 
         let terceiroGrau = tribunaisSuperiores();
         if (terceiroGrau != "") {

@@ -21,7 +21,7 @@ def formata(dicionario):
 
 dicionario = {'erros': set(), 'timeouts': set(), 'ssl_error': set(), 'connection_timeout': set(), 'connection_error': set()}
 
-with open('/home/pi/tjFacil/object.js', 'r') as f:
+with open('./object.js', 'r') as f:
     urls = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', f.read())
     for link in urls:
         try:
@@ -40,7 +40,7 @@ with open('/home/pi/tjFacil/object.js', 'r') as f:
 outstring = formata(dicionario)
 
 dia = date.today().strftime('%d%m%Y')
-nome = f"/home/pi/tjFacil/relatorios/relatoriotjfacil{dia}.txt"
+nome = f"./relatorios/relatoriotjfacil{dia}.txt"
 
 f_saida = open(nome,'w')
 f_saida.write(outstring)
