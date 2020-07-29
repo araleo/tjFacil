@@ -1,6 +1,4 @@
 # TJFacil
-Interface web para redirecionar usuários aos sites de tribunais brasileiros.
+## O TJFacil migrou para o Django -> [novo repositório](https://github.com/araleo/dj-tjfacil)
 
-As buscas podem se realizados pela sigla do Tribunal ou por número do processo.
-
-tester.py é um programa que acessa os links armazenados e procura por links defeituosos, emitindo um relatório por email.
+* objects.js contém uma relação dos Tribunais Brasileiros e seus respectivos sites principais e de busca processual.
